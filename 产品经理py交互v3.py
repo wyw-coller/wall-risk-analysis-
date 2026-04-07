@@ -239,7 +239,7 @@ html_content = f"""<!DOCTYPE html>
 html_file = "zhuhuqiang_pm_pricing.html"
 with open(html_file, "w", encoding="utf-8") as f:
     f.write(html_content)
-
+  
 webbrowser.open("file://" + os.path.abspath(html_file))
 print(f"产品经理定价工具已启动，请查看浏览器窗口：{os.path.abspath(html_file)}")
 print("本工具使用的定价系数来自86个小区泊松回归分析，与数据分析师结果保持一致。")
